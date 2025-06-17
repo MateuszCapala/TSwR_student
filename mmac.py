@@ -14,13 +14,14 @@ from utils.simulation import simulate
 """http://www.gipsa-lab.fr/~ioandore.landau/adaptivecontrol/Transparents/Courses/AdaptiveCourse5GRK.pdf"""
 
 Tp = 0.01
-end = 3.
+start = 0
+end = 15
 
 
 # TODO: Switch to MMAC as soon as you implement it
-#controller = MMAController(Tp)
-controller = FeedbackLinearizationController(Tp)
-controller = DummyController(Tp)
+controller = MMAController(Tp)
+#controller = FeedbackLinearizationController(Tp)
+#controller = DummyController(Tp)
 
 """
 Here you have some trajectory generators. You can use them to check your implementations.
